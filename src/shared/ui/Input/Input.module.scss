@@ -1,0 +1,46 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--01);
+}
+
+.input {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--01);
+    padding: 10px 16px;
+    border: 2px solid var(--04);
+    border-radius: 50px;
+    max-width: 420px;
+
+    &::placeholder {
+        color: var(--02);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.error {
+    font-size: 12px;
+    color: rgba(255, 140, 140, 0.95);
+}
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 16px;
+    }
+
+    .input {
+        font-size: 14px;
+        max-width: 100%;
+    }
+}

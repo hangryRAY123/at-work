@@ -1,0 +1,77 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    svg {
+        transition: 0.3s ease-in-out;
+        fill: #161616;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            svg {
+                fill: var(--accent);
+            }
+        }
+    }
+
+    &:active {
+        svg {
+            fill: var(--02);
+        }
+    }
+
+    @media (max-width: 768px) {
+        svg {
+            width: 3px;
+            height: 10px;
+        }
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 0 0 2px 0 #5a5a5a;
+    background: var(--06);
+
+    button,
+    a {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--01);
+        border-radius: 8px;
+        padding: 8px 12px;
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        text-align: left;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+}

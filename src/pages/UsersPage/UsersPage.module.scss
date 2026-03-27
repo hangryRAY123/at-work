@@ -1,0 +1,45 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--01);
+    margin-top: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 32px 40px;
+}
+
+.empty {
+    margin-top: 12px;
+    opacity: 0.75;
+    margin: 0;
+}
+
+.error {
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 90, 90, 0.24);
+    background: rgba(255, 90, 90, 0.08);
+}
+
+@media (max-width: 768px) {
+    .page {
+        margin-top: 32px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .section {
+        gap: 16px;
+    }
+
+    .page {
+        gap: 32px;
+    }
+}

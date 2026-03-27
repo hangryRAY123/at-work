@@ -1,0 +1,86 @@
+.card {
+    display: flex;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 16px;
+    background: var(--06);
+}
+
+.archive {
+    filter: grayscale(100%);
+}
+
+.avatar {
+    display: block;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    object-fit: cover;
+    flex-shrink: 0;
+    width: 112px;
+    height: 120px;
+}
+
+.card_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--accent);
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 80%;
+    min-width: 0;
+}
+
+.address_city {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--02);
+}
+
+.company_name {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--03);
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .avatar {
+        width: 130px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .username {
+        font-size: 18px;
+    }
+
+    .address_city {
+        font-size: 14px;
+    }
+
+    .company_name {
+        font-size: 10px;
+        margin-top: 12px;
+    }
+}

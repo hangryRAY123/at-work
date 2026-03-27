@@ -1,0 +1,63 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: rgba(22, 22, 22, 0.24);
+}
+
+.modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 310px;
+    border-radius: 16px;
+    background: var(--06);
+    padding: 40px;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--02);
+    margin: 0;
+}
+
+.close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    svg {
+        fill: var(--01);
+		transition: 0.3s ease-in-out;
+    }
+
+    @media (hover: hover) {
+        &:hover {
+            svg {
+                fill: var(--accent);
+            }
+        }
+    }
+
+    &:active {
+        svg {
+            fill: var(--02);
+        }
+    }
+}

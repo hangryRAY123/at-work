@@ -1,0 +1,23 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.section_header {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--04);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--01);
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+        gap: 18px;
+    }
+}
