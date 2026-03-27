@@ -18,10 +18,6 @@ function parseUserId(value: string | undefined) {
     return n;
 }
 
-function digitsOnly(value: string) {
-    return value.replace(/\D/g, "");
-}
-
 export function UserEditPage() {
     const navigate = useNavigate();
     const params = useParams();
@@ -134,7 +130,7 @@ export function UserEditPage() {
                                 username: user.username,
                                 email: user.email,
                                 city: user.address.city,
-                                phone: digitsOnly(user.phone),
+                                phone: user.phone,
                                 companyName: user.company.name,
                             }}
                             onSubmit={handleSubmit}
