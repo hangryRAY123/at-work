@@ -92,15 +92,15 @@ export function UserEditPage() {
                     >
                         <path
                             d="M13.125 10.5H0.875"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                         />
                         <path
                             d="M7 16.625L0.875 10.5L7 4.375"
-                            stroke-width="1.5"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                         />
                     </svg>
 
@@ -113,8 +113,8 @@ export function UserEditPage() {
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M13.7803 16.5303C13.4874 16.8232 13.0126 16.8232 12.7197 16.5303L8.71967 12.5303C8.42678 12.2374 8.42678 11.7626 8.71967 11.4697L12.7197 7.46967C13.0126 7.17678 13.4874 7.17678 13.7803 7.46967C14.0732 7.76256 14.0732 8.23744 13.7803 8.53033L10.3107 12L13.7803 15.4697C14.0732 15.7626 14.0732 16.2374 13.7803 16.5303Z"
                         />
                     </svg>
